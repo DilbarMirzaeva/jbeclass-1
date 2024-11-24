@@ -1,3 +1,5 @@
+package taskLesson;
+
 public class TypesPrint {
     public static void main(String[] args) {
         //8 primitive data tipinin 3print method ile hazirlanmasi

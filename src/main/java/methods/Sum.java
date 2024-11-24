@@ -1,6 +1,6 @@
 package methods;
 
-public class sum {
+public class Sum {
     public static void main(String[] args) {
         int[] nums={5,6};
         int cem=topla(nums);

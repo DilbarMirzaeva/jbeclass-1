@@ -1,4 +1,6 @@
-public class class2 {
+package taskLesson;
+
+public class Class2 {
     public static void main(String[] args) {
         int number1=15;
         int number2=7;
