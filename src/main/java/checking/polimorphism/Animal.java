@@ -1,4 +1,6 @@
-package checking;
+package checking.polimorphism;
+
+import java.util.Objects;
 
 public class Animal {
 
@@ -30,8 +32,22 @@ public class Animal {
         return "animal sound";
     }
 
+    public boolean equals(Object obj) {
+        if(this==obj) return true;
+        if(obj==null || getClass()!= obj.getClass()) return false;
+
+        Animal animal=(Animal) obj;
+        return name.equals(animal.name) &&
+                age==animal.age;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
     public String toString(){
         return "name:"+getName() +
-                "\nage:"+getAge();
+                "\n age:"+getAge();
     }
 }

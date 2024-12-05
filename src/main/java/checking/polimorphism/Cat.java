@@ -1,4 +1,4 @@
-package checking;
+package checking.polimorphism;
 
 public class Cat extends Animal {
 
@@ -16,6 +16,18 @@ public class Cat extends Animal {
 
     public int getTailLength() {
         return tailLength;
+    }
+
+    public boolean equals(Object obj){
+        if(this==obj) return true;
+        if(obj==null || getClass()!=obj.getClass()) return false;
+
+        Cat cat=(Cat) obj;
+        return tailLength==cat.tailLength && super.equals(obj);
+    }
+
+    public int hashCode(){
+        return 31*tailLength;
     }
 
     public String sound() {
