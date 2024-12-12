@@ -5,9 +5,9 @@ public class Main {
         System.out.println("Dog:");
         Dog dog=new Dog();
         dog.setName("Bobby");
-        dog.getName();
+        System.out.println(dog.getName());
         dog.setAge(3);
-        dog.getAge();
+        System.out.println(dog.getAge());
         dog.info();
         dog.eat();
         dog.makeSound();
@@ -17,9 +17,9 @@ public class Main {
         System.out.println("\nCat:");
         Cat cat =new Cat();
         cat.setName("Miki");
-        cat.getName();
+        System.out.println(cat.getName());
         cat.setAge(2);
-        cat.getAge();
+        System.out.println(cat.getAge());
         cat.info();
         cat.makeSound();
         cat.eat();
@@ -29,9 +29,9 @@ public class Main {
         System.out.println("\nLion:");
         Lion lion=new Lion();
         lion.setName("Simba");
-        lion.getName();
+        System.out.println( lion.getName());
         lion.setAge(4);
-        lion.getAge();
+        System.out.println(lion.getAge());
         lion.makeSound();
         lion.hunt();
         lion.roar();
